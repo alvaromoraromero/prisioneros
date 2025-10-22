@@ -1,0 +1,77 @@
+dialog {
+    width: 100%;
+    height: 100%;
+    border-color: white;
+    outline: white;
+}
+
+dialog div {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 1.5em 1em;
+}
+
+dialog div.prisionero {
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: transform .15s;
+}
+
+dialog div.prisionero:hover {
+    transform: scale(-1.2, 1.2);
+    border-color: gray;
+}
+
+div.prisionero {
+    background-image: var(--tono-prisionero);
+    position: relative;
+    height: 150px;
+    aspect-ratio: 85 / 200;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
+}
+
+div.botones {
+    display: flex;
+    position: absolute;
+    gap: 2px;
+    padding: 2px;
+    margin: 5px;
+    right: 0;
+    top: 0;
+    border: 2px solid black;
+}
+
+div.botones button {
+    background-color: transparent;
+    padding: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+div.botones button:hover {
+    background-color: #DDDDDD;
+}
+
+img[src="svg/sombrero.svg"] {
+    height: 40px;
+    position: absolute;
+    top: -18px;
+    left: 2px;
+}
+
+img.gris {
+    filter: invert(60%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%) contrast(90%);
+}
+
+img.rojo {
+    filter: invert(32%) sepia(96%) saturate(3200%) hue-rotate(-10deg) brightness(90%) contrast(95%);
+}
+
+img.azul {
+    filter: invert(32%) sepia(96%) saturate(2800%) hue-rotate(195deg) brightness(90%) contrast(95%);
+}
