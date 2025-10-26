@@ -12,9 +12,9 @@
         <button title="Cambiar tono prisioneros" onclick="abrirModalCambioTono()">🎨</button>
     </div>
     <h1>Prisioneros</h1>
-    <script>
-        document.body.appendChild(crearPrisionero());
-    </script>
+    <form>
+        <input type="range" id="numPrisioneros" min="4" max="10"><span id="totalPrisioneros"></span>
+    </form>
     <dialog id="cambiarTonoModal"></dialog>
 </body>
 </html>
