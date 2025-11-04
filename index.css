@@ -83,12 +83,33 @@ form {
 }
 
 div#prisioneros, div#msgPrisioneros {
-    margin-top: 30px;
     display: flex;
+    align-items: center;
+    margin-top: 30px;
     gap: 5%;
 }
 
 div#msgPrisioneros > div {
+    display: flex;
     width: 64px;
+    justify-content: center;
+}
+
+div#msgPrisioneros > div.disabled {
+    pointer-events: none;
+    opacity: 0;
+}
+
+div#msgPrisioneros > div > div {
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+p#restantes {
+    font-weight: 700;
+    border: gray 2px dotted;
+    width: 140px;
     text-align: center;
+    padding: 10px;
 }

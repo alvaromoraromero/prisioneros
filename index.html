@@ -12,9 +12,21 @@
         <button title="Cambiar tono prisioneros" onclick="abrirModalCambioTono()">🎨</button>
     </div>
     <h1>Prisioneros</h1>
+    <div>
+        <h2>Leyenda</h2>
+        <p>Si el <u>primer prisionero</u> dice...</p>
+        <ul>
+            <li>🔴 Número de sombreros rojos PAR</li>
+            <li>🔵 Número de sombreros rojos IMPAR</li>
+        </ul>
+    </div>
     <form>
+        <h2>Número de prisioneros:</h2>
         <input type="range" id="numPrisioneros" min="4" max="10"><span id="totalPrisioneros"></span>
     </form>
+    <div id="prisioneros"></div>
+    <div id="msgPrisioneros"></div>
+    <p id="restantes"></p>
     <dialog id="cambiarTonoModal"></dialog>
 </body>
 </html>
